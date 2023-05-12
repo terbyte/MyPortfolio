@@ -60,10 +60,24 @@ header {
   color: var(--color-white);
   overflow: hidden;
 }
+
+
+
+
 @media screen and (max-width: 600px) {
   header {
-    min-width: 100vh;
+    min-width: 30vh;/* THE PROBLEM OF GLITCHING THE HEADER. ALL WERE OVERLAPPING HOME PAGE */
   }
+
+  .header-content{
+    /* min-height: 20vh; */
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+  }
+ 
 }
 
 section {
@@ -700,6 +714,12 @@ section {
   display: flex;
   justify-content: flex-start;
 }
+
+
+
+
+
+
 
 /* Independent-components*/
 .btn-con {
