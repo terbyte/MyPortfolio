@@ -66,17 +66,25 @@ header {
 
 @media screen and (max-width: 600px) {
   header {
-    min-width: 30vh;/* THE PROBLEM OF GLITCHING THE HEADER. ALL WERE OVERLAPPING HOME PAGE */
+    min-width: 10vh;/* THE PROBLEM OF GLITCHING THE HEADER. ALL WERE OVERLAPPING HOME PAGE */
   }
 
-  .header-content{
-    /* min-height: 20vh; */
-    width: 100%;
+  .right-header{
+    margin: 0 auto;
+    left: 5%;
+    top: 5%; 
     position: absolute;
-    left: 0;
-    top: 0;
 
   }
+  .left-header{
+    margin: 0 auto;
+    height: 350px;
+    width: 350px;
+    right:35%;
+    top: 50%; 
+
+  }
+
  
 }
 
