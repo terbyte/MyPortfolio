@@ -80,7 +80,7 @@ header {
     margin: 0 auto;
     height: 350px;
     width: 350px;
-    right:35%;
+    right:33%;
     top: 50%; 
 
   }
@@ -632,9 +632,13 @@ section {
 .contact-content-con {
   display: flex;
   padding: 3.5rem;
+  
 }
 .contact-content-con .left-contact {
   flex: 2;
+  /* background-color: white; */
+  width: 150%;
+
 }
 .contact-content-con .left-contact h4 {
   margin-top: 1rem;
@@ -647,8 +651,8 @@ section {
 }
 .contact-content-con .left-contact .contact-info .contact-item {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .contact-content-con .left-contact .contact-info .contact-item p {
   margin: 0.3rem 0 !important;
@@ -722,8 +726,6 @@ section {
   display: flex;
   justify-content: flex-start;
 }
-
-
 
 
 
