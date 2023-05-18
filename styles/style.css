@@ -842,10 +842,19 @@ section {
     text-align: center;
     padding-top: 3rem;
   }
-  .header-content .left-header .img {
-    margin: 0 auto;
-    width: 90%;
+  .header-content .left-header {
+   position: relative;
+  
+
   }
+  /* .header-content .left-header .img{
+    margin:  auto;
+    width: 250px;
+    top: 20%;
+
+  } */
+
+
   .about-container {
     grid-template-columns: 1fr;
   }
