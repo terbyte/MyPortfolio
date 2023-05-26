@@ -6,37 +6,20 @@
     header{
         padding: 0 !important;
     }
-    header .right-header{
-            padding:2rem !important;
-
-    }
-
     .theme-btn{
         width: 50px;
         height: 50px;
-        top: 90%;
-        right: 5%;
-
     }
     .header-content{
-        grid-template-columns:repeat(1, 1fr);
-        padding: 6rem;
-
-        .particles-js-canvas-el{
-            display: none;
-        }
-   
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
     }
 
-    // .left-header{
-    //     padding:0 !important;
-    //     // .h-shape{
-    //     //     display: none;
-    //     // }
-    // }
-
-
-    
+    .left-header{
+        .h-shape{
+            display: none;
+        }
+    }
     .right-header{
         grid-row: 1;
         padding-right: 0rem !important;
@@ -48,19 +31,30 @@
             padding-top: 3rem;
         }
     }
-
-    .header-content .left-header .img{
+    .header-content .left-header .image{
         margin: 0 auto;
         width: 90%;
     }
 
+    .controls{
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+        .control{
+            margin: 1rem .3rem;
+        }
+    }
 
     .about-container{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
         .right-about{
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(1, 1fr);
             padding-top: 2.5rem;
-            
         }
         .left-about{
             padding-right: 0;
@@ -68,11 +62,11 @@
                 padding-left: 0;
             }
         }
-        
     }
+
     .timeline{
-        grid-template-columns:repeat(1, 1fr);
-        padding-bottom: 6rem ;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
     }
 
     .container{
@@ -81,79 +75,104 @@
 
     .about-stats{
         .progress-bars{
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(1, 1fr);
         }
-
     }
 
     .portfolios{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
         padding-bottom: 6rem;
-        .port-text{
-
-            padding: 2rem 0;
-            text-align: center;
-        }
-
+        margin-top: 1rem;
     }
-
-    
 
     .blogs{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
         padding-bottom: 6rem;
     }
 
-    .contact-content-con {
+    .contact-content-con{
         flex-direction: column;
         .right-contact{
             margin-left: 0;
             margin-top: 2.5rem;
         }
+        
     }
     .contact-content-con .right-contact .i-c-2{
         flex-direction: column;
     }
     .contact-content-con .right-contact .i-c-2 :last-child{
-        margin-left: 0 ;
-        margin-top:1.5rem;
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    .contact-content-con .right-contact{
+        margin-bottom: 6rem;
+    }
+
+    .contact-item{
+        flex-direction: column;
+        margin: 1rem 0;
+        p{
+            font-size: 15px;
+            color: var(--color-grey-2);
+        }
+        span{
+            font-size: 15px;
+        }
+        .icon{
+            grid-template-columns: 25px 1fr;
+        }
     }
 
 
-    .section{
-        padding: 2rem 2.5rem;
+    .main-title{
+        h2{
+            font-size: 2rem;
+            span{
+                font-size: 2.3rem;
+            }
+            .bg-text{
+                font-size: 2.3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1432px){
+    .container{
+        padding: 7rem 11rem;
+    }
+
+    .contact-content-con{
+        flex-direction: column;
+        .right-contact{
+            margin-left: 0;
+            margin-top: 2.5rem;
+        }
+        
+    }
+    .contact-content-con .right-contact .i-c-2{
+        flex-direction: column;
+    }
+    .contact-content-con .right-contact .i-c-2 :last-child{
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    .contact-content-con .right-contact{
+        margin-bottom: 6rem;
     }
 
     .main-title{
         h2{
-            margin-top: 5rem;
-            font-size: 2rem;
-            span{
-                font-size: 2rem;
-            }
             .bg-text{
-                font-size: 3rem;
+                font-size: 5.5rem;
             }
         }
     }
-
-
-
-    .controlls{
-        top: auto;
-        top: 0;
-        flex-direction: row;
-        justify-content: center;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        background-color: var(--color-grey3);
-
-        .control{
-            margin: 1rem .3rem;
-        }
-    }
-
+    
+}
 
 
 
@@ -228,7 +247,7 @@
         width: 90%;
         margin: 0 auto;
         .name{
-            font-size: 1.5rem !important;
+            font-size: 2.5rem !important;
             text-align: center;
             padding-top: 3rem;
         }
@@ -259,6 +278,4 @@
             }
         }
     }
-    
-}
 }
